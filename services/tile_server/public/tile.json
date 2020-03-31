@@ -1,5 +1,5 @@
 {
-  "attribution": "<a href=\"http://www.openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"http://www.openstreetmap.org/about/\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+  "attribution": "",
   "basename": "california_los-angeles.mbtiles",
   "bounds": [-119.437,33.298,-116.724,34.583],
   "center": [-118.243683,34.052235,10],
