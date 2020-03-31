@@ -14,10 +14,10 @@ Web app can be found at http://localhost:8888
 - 2 containers will be built:
 
   *tile_server* is just a static file server serving up the directory /public
-      - **/tiles** are .pbf files in a {z}/{x}/{y} directory structure. The HTTP header `Content-Encoding: 'gzip'` is set on these files. This is required for .pbf files.
-      - **/styles** The styles for each theme in .json.
-      - **/fonts** The fonts used in the styles. We also serve them locally.
-      - **/** at the root is tile.json. It contains default configs of the mapping client.
+    - **/tiles** are .pbf files in a {z}/{x}/{y} directory structure. The HTTP header `Content-Encoding: 'gzip'` is set on these files. This is required for .pbf files.
+    - **/styles** The styles for each theme in .json.
+    - **/fonts** The fonts used in the styles. We also serve them locally.
+    - **/** at the root is tile.json. It contains default configs of the mapping client.
 
   *web_app* is a React app and Express server using the Mapbox GL library to render the vector tiles. No keys needed! Everything is served from tile_server.
 
