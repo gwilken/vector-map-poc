@@ -3,14 +3,15 @@
 
 `make dev`
 
-to develop locally outside of docker.  Web app can be found at http://localhost:3000
-tested with NodeJS 10.16
+Develop locally outside of Docker.  Web app can be found at http://localhost:3000
+
+Tested with NodeJS 10.16
 
 `make build`
 
 `make up`
 
-to build web app and run in docker. Web app can be found at http://localhost:8888
+Build static web app and run in Docker. Web app can be found at http://localhost:8888
 
 
 
