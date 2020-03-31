@@ -25,7 +25,7 @@ const rootReducer = (state = initialState, action) => {
     case UPDATE_SELECTED_LAYER:
       return { ...state, selectedLayer: action.payload }
 
-      case UPDATE_SELECTED_LAYER_TYPE:
+    case UPDATE_SELECTED_LAYER_TYPE:
       return { ...state, selectedLayerType: action.payload }
 
     case UPDATE_COLOR:

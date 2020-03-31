@@ -24,7 +24,7 @@ class ReduxMap extends Component {
     this.map = new mapboxgl.Map({
       container: this.mapContainer,
       style: this.props.mapStyle,
-      center: [-118.243683,34.052235],
+      center: [-118.243683, 34.052235],
       zoom: 13
     });
 
