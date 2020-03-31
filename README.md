@@ -27,7 +27,7 @@ Web app can be found at http://localhost:8888
   - Generating OpenMapTiles: https://github.com/openmaptiles/openmaptiles/blob/master/QUICKSTART.md#req
 
   - Vector Files and AWS (important info on tile.json, http headers): https://github.com/addresscloud/serverless-tiles
-    - .pdf from website can be found in this repo at: ./docs/vector-tiles-aws.pdf.pdf
+    - .pdf from website can be found in this repo at: ./docs/vector-tiles-aws.pdf
 
   - Export an mbtiles file to .pbf: https://github.com/mapbox/mbutil
 
