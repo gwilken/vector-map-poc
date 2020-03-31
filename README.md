@@ -1,13 +1,17 @@
 # vector-map-poc
 ### A static vector tile server and frontend proof of concept
 
+`make dev`
+
+to develop locally outside of docker.
+
 `make build`
 
 `make up`
 
-to get things started.
+to build web app and run in docker. Web app can be found at http://localhost:8888
 
-Web app can be found at http://localhost:8888
+
 
 ### App Notes:
 - this is a large-ish repo (> 100M) containing the pre rendered .pbf tiles
