@@ -1,18 +1,21 @@
 # vector-map-poc
 ### A static vector tile server and frontend proof of concept
 
+</br>
+
 `make dev`
 
-Develop locally outside of Docker.  Web app can be found at http://localhost:3000
-
-Tested with NodeJS 10.16
+Develop locally outside of Docker. Tested with NodeJS 10.16. Web app can be found at http://localhost:3000
+</br>
+</br>
 
 `make build`
 
 `make up`
 
 Build static web app and run in Docker. Web app can be found at http://localhost:8888
-
+</br>
+</br>
 
 
 ### App Notes:
