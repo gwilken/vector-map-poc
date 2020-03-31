@@ -3,7 +3,8 @@
 
 `make dev`
 
-to develop locally outside of docker.
+to develop locally outside of docker.  Web app can be found at http://localhost:3000
+
 
 `make build`
 
