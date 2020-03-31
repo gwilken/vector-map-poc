@@ -1,0 +1,61 @@
+{
+  "version": 8,
+  "name": "Custom",
+  "metadata": {
+    "mapbox:autocomposite": false
+  },
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+  "sources": {
+    "composite": {
+      "type": "vector",
+      "tiles": ["http://localhost:7777/tiles/{z}/{x}/{y}.pbf"],
+      "minzoom": 0,
+      "maxzoom": 7
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "hotpink"
+      }
+    },
+    {
+      "id": "road",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "road",
+      "minzoom": 13,
+      "maxzoom": 15,
+      "paint": {
+          "line-color": "#FFFFFF",
+          "line-width": 3.5
+      }
+    },
+    {
+      "id": "road2",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "road",
+      "minzoom": 10,
+      "maxzoom": 13,
+      "paint": {
+          "line-color": "#ffffff",
+          "line-width": 1.5
+      }
+    },
+    {
+      "id": "road3",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "road",
+      "minzoom": 0,
+      "maxzoom": 10,
+      "paint": {
+          "line-color": "#ffffff",
+          "line-width": 0.5
+      }
+    }
+  ]
+}
