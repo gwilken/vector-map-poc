@@ -8,8 +8,6 @@ COPY --chown=appuser:appgroup . .
 
 RUN npm i
 
-EXPOSE 7000
-
 USER appuser
 
 ENTRYPOINT [ "sh", "./entrypoint.sh" ]

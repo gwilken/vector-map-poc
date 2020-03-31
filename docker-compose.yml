@@ -1,0 +1,22 @@
+version: '3'
+services:  
+  tile_server:
+    build:
+      context: ./services/tile_server
+    environment:
+    - API_PORT=7777
+    ports:
+    - 7777:7777
+
+  web_app:
+    build:
+      context: ./services/web_app
+    depends_on:
+    - "tile_server"
+    environment:
+    - API_PORT=8888
+    - TILE_SERVER_PATH=http://tile_server
+    ports:
+    - 8888:8888
+  
+  
