@@ -4,7 +4,7 @@
 `make dev`
 
 to develop locally outside of docker.  Web app can be found at http://localhost:3000
-
+tested with NodeJS 10.16
 
 `make build`
 

@@ -9,5 +9,5 @@ down:
 	docker-compose down;
 
 dev:
-	cd services/tile_server; node server.js &
-	cd services/web_app; npm start;
+	cd services/tile_server; npm i; node server.js &
+	cd services/web_app; npm i; npm start;
