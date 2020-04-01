@@ -89,6 +89,18 @@ class ReduxMap extends Component {
     this.map.remove();
   }
 
+  handleSaveStyle() {
+    const data = JSON.stringify(this.map.getStyle())
+    const blob = new Blob([data], {type: 'text/plain'})
+    const e = document.createEvent('MouseEvents'),
+    a = document.createElement('a');
+    a.download = "style.json";
+    a.href = window.URL.createObjectURL(blob);
+    a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
+    e.initEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    a.dispatchEvent(e);
+  }
+
   render() {
     const style = {
       position: 'absolute',
@@ -97,7 +109,11 @@ class ReduxMap extends Component {
       width: '100%'
     };
 
-    return <div style={style} ref={el => this.mapContainer = el} />;
+    return (
+      <div style={style} ref={el => this.mapContainer = el}> 
+        <div className="button" onClick={() => this.handleSaveStyle() }>Save Current Style</div>
+      </div>
+    )  
   }
 }
 

@@ -43,3 +43,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+.button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  bottom: 10px;
+  left: 10px;
+  height: 25px;
+  background-color: white;
+  color:dimgrey;
+  font-weight: bold;
+  z-index: 1000;
+  border-radius: 7px;
+  border: 1px solid dimgrey;
+}
+

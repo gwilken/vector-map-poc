@@ -26,12 +26,13 @@ class ReduxSelectStyle extends Component {
     return (
       <form className="select-style">
         <label>
-          Style:
+          Base Style:
           <select value={this.props.mapStyle} onChange={this.handleChange}>
             <option value='http://localhost:7777/styles/dark.json'>Dark Mode</option>
             <option value='http://localhost:7777/styles/positron.json'>Positron</option>
             <option value='http://localhost:7777/styles/bright.json'>Bright</option>
             <option value='http://localhost:7777/styles/klok.json'>Klokantech</option>
+            <option value='http://localhost:7777/styles/blueprint.json'>Blueprint</option>
           </select>
         </label>
     </form>

@@ -18,7 +18,7 @@ Build static web app and run in Docker. Web app can be found at http://localhost
 </br>
 
 
-### App Notes:
+### Notes:
 - this is a large-ish repo (> 100M) containing the pre rendered .pbf tiles
 - 2 containers will be built:
 
